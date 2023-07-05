@@ -1,0 +1,82 @@
+
+$burger-line: 4px;
+$burger-color: #2CC4CB;
+
+$sidemenu-background: #2CC4CB;
+$sidemenu-link: #fff;
+$sidemenu-footer: #2DB8C2;
+
+
+
+%oswald-200 {
+  font-family: 'Oswald',
+    sans-serif;
+  font-weight: 200;
+}
+
+%oswald-700 {
+  font-family: 'Oswald',
+    sans-serif;
+  font-weight: 700;
+}
+
+%roboto-300 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+%roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-300 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+%sans-400 {
+  font-family: 'PT Sans',
+    sans-serif;
+  font-weight: 400;
+}
+
+%sans-700 {
+  font-family: 'PT Sans',
+    sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-500 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-600 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+%montserrat-700 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

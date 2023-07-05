@@ -1,0 +1,114 @@
+
+
+html,
+body {
+  height: 100%;
+
+}
+
+a {
+  transition: all 0.3s;
+}
+
+body {
+  @extend %sans-400;
+  font-size: 14px;
+  line-height: 1.4;
+  font-style: normal;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn {
+  padding: 20px 50px;
+}
+
+.oksior-block {
+  padding: 25px 0 150px;
+  background-image: url('../images/search-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 5px solid #e2c02b;
+  position: relative;
+  z-index: 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url('../images/line.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+  }
+
+  &__box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    @extend %oswald-700;
+    font-size: 45px;
+    line-height: 63px;
+    color: #e2c02b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    padding: 0 20px;
+    display: inline;
+  }
+
+  &__subtitle {
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.786);
+    width: 32%;
+    text-align: center;
+  }
+}
+
